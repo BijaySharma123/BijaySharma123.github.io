@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 </head>
 
 <body>
@@ -21,15 +22,15 @@
                 <a class="navbar-brand" href="/index.html">Bijay Sharma</a>
 
                 <button class="navbar-toggler ms-auto " type="button" id="navbar-toggler" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto fs-5">
                         <li class="nav-item">
-                            <a class="nav-link" href="/index.html">Home</a>
+                            <a class="nav-link active" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/poems.html">Poems</a>
@@ -100,7 +101,7 @@
         </section>
         <!-- Hero Section End -->
     </header>
-    
+
 
 
 
@@ -108,48 +109,44 @@
     <section class="poems-section">
         <div class="container">
             <div class="">
-                <h1 class="text-start text-uppercase fst-italic py-5">Poems</h1>
+                <h1 class="text-start text-uppercase fw-bold fst-italic py-4">Poems</h1>
             </div>
 
             <!-- Poem Container -->
             <div class="row">
+                <!-- <div class="col"> -->
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6 col-sm-12 col-md-8 poem-box">
+                    <a href="./pages/poems.html" class="text-uppercase text-decoration-none text-dark">
+                        <h4 class="title p-3">Whispers of the Woods</h4>
+                    </a>
+                    <p class="texts px-4 lh-lg">The woods began to whisper; About the picture it always desired;
+                        Gust of wind which touches the leaves, And drops of rain which quench the thirst Of
+                        woods. It sang the song of innocence, Of, how the world changed its cloth, How it
+                        giggled once and how it cries now, Winds whistled, sang, and danced
+                        <a href="./pages/poems.html" class=" text-decoration-none">continue reading...</a>
 
-                <div class="col">
-                    <div class="col-12 col-sm-12 col-md-8 poem-box">
-                        <a href="./pages/poems.html" class="text-uppercase text-decoration-none text-dark">
-                            <h3 class="title p-3">Whispers of the Woods</h3>
-                        </a>
-                        <p class="texts px-4 lh-lg">The woods began to whisper; About the picture it always desired;
-                            Gust of wind which touches the leaves, And drops of rain which quench the thirst Of
-                            woods. It sang the song of innocence, Of, how the world changed its cloth, How it
-                            giggled once and how it cries now, Winds whistled, sang, and danced, Everything of
-                            nature it embraced once, Now it just blows in despair! Woods began to whisper, The words
-                            unspoken, Woods began to whisper, About the world it’d always desired for!
-                        </p>
-                        <div class="row">
-                            <div class="col-6">Date 22:06:2024</div>
-                            <div class="col-12">
-                                <h5 class="text-end px-2 fst-italic poem-author" id="author">By Bijay Sharma</h5>
-                            </div>
+                    </p>
+                    <div class="row">
+                        <div class="col-6">Date 22:06:2024</div>
+                        <div class="col-12">
+                            <h5 class="text-end px-2 fst-italic poem-author" id="author">By Bijay Sharma</h5>
                         </div>
                     </div>
                 </div>
+                <!-- </div> -->
 
                 <!-- Poem 2 -->
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-8 poem-box">
+                    <div class="col-lg-6 col-sm-12 col-md-8 poem-box">
                         <a href="./pages/poems.html" class="text-uppercase text-decoration-none text-dark">
-                            <h3 class="title p-3">Memories in the Wind</h3>
+                            <h4 class="title p-3">Memories in the Wind</h4>
                         </a>
                         <p class="texts px-4 lh-lg">Silence and chaos in their own place — Works so adversely
                             sometimes; but The wind that once touched us, and Made us think of the inevitable —
-                            wasn't A falsehood For, life is itself the beginning of the end, And each time it decays
-                            without knowing at all, But the love that once you shared, is still with me, I'm not
-                            tired of counting the stars, for It brings the memory of yours, But the wish to see you
-                            again is — Always unfulfilled! Death bed oh my darling! It is a common place for all.
-                            But that wind still holds the memory of yours, But to accept your absence is a harder
-                            task, Hence, through the verses you'll reborn, And I'll see that beautiful smile of
-                            yours!!
+                            wasn't A falsehood For, life is itself the beginning of the
+                            <a href="./pages/poems.html" class=" text-decoration-none">continue reading...</a>
+
                         </p>
                         <div class="row">
                             <div class="col-6">Date 22:06:2024</div>
@@ -158,26 +155,25 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Placeholder column for larger screens -->
+                    <div class="col-lg-6"></div>
 
+                    <!-- Placeholder column for larger screens -->
                 </div>
 
                 <!-- Poem 3 -->
                 <div class="row">
                     <!-- Placeholder column for larger screens -->
+                    <div class="col-lg-6"></div>
 
-                    <div class="col-12 col-sm-12 col-md-8 poem-box">
+                    <div class="col-lg-6 col-sm-12 col-md-8 poem-box">
                         <a href="./pages/poems.html" class="text-uppercase text-decoration-none text-dark">
-                            <h3 class="title p-3">Reflections of Odrearyboy</h3>
+                            <h4 class="title p-3">Reflections of Odreary boy</h4>
                         </a>
-                        <p class="texts px-4 lh-lg">Odrearyboy, how do you smile In every path, where thorns lie?
+                        <p class="texts px-4 lh-lg">Odreary boy, how do you smile In every path, where thorns lie?
                             How do you see the joy unseen? How do you make yourself so pristine? The woods are deep
-                            where lives dwell, Chaos in day and silent in night, You get a hope, to tread in this
-                            path Where chaos is peaceful and silence’s bizarre? River flows here day and night,
-                            Without complaining - facing the plight, You are a river or a shining star That truly
-                            shines in the silent night? I am failed to identify — Inside your smile, the emptiness
-                            lie? Your art is great indeed, Sowing the seed in barren field, Yet I stare at your
-                            smile, It’s a quintessence of heaven indeed!
+                            where lives dwell, Chaos in day and
+                            <a href="./pages/poems.html" class=" text-decoration-none">continue reading...</a>
+
                         </p>
                         <div class="row">
                             <div class="col-6">Date 22:06:2024</div>
@@ -190,22 +186,15 @@
 
                 <!-- Poem 4 -->
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-8 poem-box">
+                    <div class="col-lg-6 col-sm-12 col-md-8 poem-box">
                         <a href="./pages/poems.html" class="text-uppercase text-decoration-none text-dark">
-                            <h3 class="title p-3">Flight of the Beautiful Bird</h3>
+                            <h4 class="title p-3">Flight of the Beautiful Bird</h4>
                         </a>
                         <p class="texts px-4 lh-lg">I saw a beautiful bird, Its wings were large and warm, It was
                             indeed a messenger of peace, And its feathers were beautiful too! I, indeed, was trying
                             to swim; For, not to drown while I still had dream, I saw it; tried to fly, Yet, so
-                            afraid to be in the sky! Finally, it took me with its height, I flew as I had dreamt,
-                            But, hesitations occurring somewhere, I stopped myself a lot, But see, how happy I was
-                            while flying! I told the bird to let me fly, Until, the light of life ends and until the
-                            life's decline, How far I flew, And I flew with it; But it was so beautiful, And how
-                            small was I! It flew away, Lost in the deep dark forest, I searched until my last hope,
-                            Still, finding the traces if I can! The nights cried and searched for it, It has already
-                            flew away, yet why look at sky? It has flew away, Leaving me behind; and winds are dull,
-                            and toxic as wine! I drank it a lot , yet no birds fly!! Or, I see a lot but not the
-                            same bird and the sky!!
+                            afraid to be in
+                            <a href="./pages/poems.html" class=" text-decoration-none">continue reading...</a>
                         </p>
                         <div class="row">
                             <div class="col-6">Date 22:06:2024</div>
@@ -215,6 +204,8 @@
                         </div>
                     </div>
                     <!-- Placeholder column for larger screens -->
+                    <div class="col-lg-6"></div>
+
 
                 </div>
             </div>
@@ -252,11 +243,11 @@
     <section class="py-3 py-md-5 about-section" id="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-lg-end">
                     <img class="img-fluid rounded" loading="lazy" src="./public/Assets/bg-about-img2.jpg" alt="About">
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-align-lg-center">
                     <h2 class="mb-3">Who am I?</h2>
                     <p class="lead fs-4 text-secondary mb-3">I write poems from my surrounding and
                         experiences that touch somewhere in my heart.

@@ -1,4 +1,3 @@
-
 // Sample JSON data (you can also fetch this from a server)
 const poems = [
   {
@@ -20,9 +19,9 @@ const poems = [
     author: "Bijay Sharma",
   },
   {
-    title: "Reflections of Odrearyboy",
+    title: "Reflections of Odreary boy",
     content:
-      "Odrearyboy, how do you smile In every path, where thorns lie? How do you see the joy unseen? How do you make yourself so pristine? The woods are deep where lives dwell, Chaos in day and silent in night, You get a hope, to tread in this path Where chaos is peaceful and silence’s bizarre? River flows here day and night, Without complaining - facing the plight, You are a river or a shining star That truly shines in the silent night? I am failed to identify — Inside your smile, the emptiness lie? Your art is great indeed, Sowing the seed in barren field, Yet I stare at your smile, It’s a quintessence of heaven indeed!",
+      "Odreary boy, how do you smile In every path, where thorns lie? How do you see the joy unseen? How do you make yourself so pristine? The woods are deep where lives dwell, Chaos in day and silent in night, You get a hope, to tread in this path Where chaos is peaceful and silence’s bizarre? River flows here day and night, Without complaining - facing the plight, You are a river or a shining star That truly shines in the silent night? I am failed to identify — Inside your smile, the emptiness lie? Your art is great indeed, Sowing the seed in barren field, Yet I stare at your smile, It’s a quintessence of heaven indeed!",
     author: "Bijay Sharma",
   },
   {
@@ -41,7 +40,7 @@ function displayPoem(index) {
   const authorEl = document.getElementById("author");
   poemListElement.innerHTML = ""; // Clear previous content
 
-//   authorEl.innerHTML = `By ${poems[index].author}`;
+  //   authorEl.innerHTML = `By ${poems[index].author}`;
 
   poems.forEach((poem, idx) => {
     const poemDiv = document.createElement("div");
@@ -61,4 +60,31 @@ function displayPoem(index) {
 // Display the first poem initially
 displayPoem(currentIndex);
 
+/* Code for changing active  
+            link on clicking */
+var btns = $("#navigation .navbar-nav .nav-link");
 
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+
+    current[0].className = current[0].className.replace(" active", "");
+
+    this.className += " active";
+  });
+}
+
+/* Code for changing active  
+            link on Scrolling */
+$(window)
+  .scroll(function () {
+    var distance = $(window).scrollTop();
+    $(".page-section").each(function (i) {
+      if ($(this).position().top <= distance + 250) {
+        $(".navbar-nav a.active").removeClass("active");
+
+        $(".navbar-nav a").eq(i).addClass("active");
+      }
+    });
+  })
+  .scroll();
