@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: ; */
+}
+html{
+  scroll-behavior: smooth; 
+}
+body {
+  background-color: var(--bg-primary-color);
+}
+
+:root {
+  --bg-primary-color: #ffffffa8;
+  --bg-secondary-color: rgb(37, 37, 37);
+  --text-light-color: #fff;
+  --text-dark-color: #121212;
+  --text-gold-color: #f3d125;
+  --text-special-color: #ff1b5c;
+  --text-shadow-color: #00000012;
+}
+
+/* Navbar Start*/
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: var(--text-light-color);
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: var(--text-light-color);
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+
+.mask-custom {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+
+/* Navbar End*/
+
+/* .bg-image{
+  background-image: url(./Assets/bg-hero-bg-2kUp.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+} */
+
+/* Hero Section Start */
+
+.comman-header {
+  padding-top: 80px;
+}
+.img-bg {
+  width: 250px;
+  height: 250px;
+  background-image: url(/public/Assets/bg-hero-bg-2kUp.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0px 14px 25px -3px rgba(0, 0, 0, 0.301);
+  animation: heroImgAnimate 3s ease 0s 1 normal none;
+  /* position: relative; */
+}
+@keyframes heroImgAnimate {
+  0% {
+    transform: scale(1%) translate(10%, 10%) rotate(30deg);
+  }
+  100% {
+  }
+}
+
+.poems {
+  letter-spacing: 0.06rem;
+  font-family: "Playwrite NZ", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-gold-color);
+  text-shadow: 0 3px 3px var(--text-shadow-color);
+}
+/* Hero Section End */
+
+/* poems-section Start */
+.poems-section .container h1 {
+  letter-spacing: 0.06rem;
+  font-family: "quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-dark-color);
+}
+.poems-section .poem-container {
+  /* margin: 0 8rem; */
+}
+
+.poems-section .poem-container .poem-box {
+  border-radius: 10px;
+
+  background-color: beige;
+  /* margin-bottom: 50px; */
+  border-bottom: 3px solid var(--text-special-color);
+  font-family: "quicksand", sans-serif;
+  color: var(--text-dark-color);
+}
+.poems-section .poem-container .poem-box p {
+  font-family: "Playwrite NZ", sans-serif;
+  letter-spacing: 0.06rem;
+  text-wrap: wrap;
+
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+/* poems-section End */
+
+/* Short Story Section Start */
+.short_stories-section .container .col-5 {
+  background-color: beige;
+  border-radius: 10px;
+  font-family: "quicksand", sans-serif;
+}
+/* Short Story Section End*/
+
+.poem-list {
+  /* margin-top: 20px; */
+}
+
+.poem {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: beige;
+  border-radius: 10px;
+}
+.poem::after {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(to right, #ccc, #fff);
+  margin-top: -0.2rem;
+}
+
+.poem-title {
+  /* font-size: 1.2em;
+  margin: 1rem; */
+}
+
+.poem-content {
+  /* margin-bottom: 10px; */
+}
+
+.poem-author {
+  /* font-style: italic;
+  color: #666;
+  text-align: end; */
+}
+
+.current-poem {
+  /* padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px; */
+}
+
+.about-section .container .row img {
+  width: 50%;
+}
